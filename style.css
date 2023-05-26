@@ -1,0 +1,98 @@
+html,
+body,
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-image: linear-gradient(black, rgb(44, 0, 85));
+}
+
+.header,
+.panel-1,
+.panel-2,
+.panel-3,
+.footer {
+    display: flex;
+    flex: 1 1 100%;
+}
+
+.header {
+    justify-content: space-between;
+    background-color: blue;
+}
+
+.header > div {
+    display: flex;
+    background-color: white;
+}
+
+.header > .left {
+    margin-left: 10px;
+}
+
+.header > .right {
+    margin-right: 10px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 10px;
+
+}
+
+.panel-1,
+.panel-3 {
+    justify-content: center;
+    background-color: blueviolet;
+    align-items: center;
+}
+
+.panel-1 {
+    height: 750px;
+}
+
+.main {
+    background-color: white;
+}
+
+.panel-2 {
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    background-color: aquamarine;
+}
+
+.panel-2 > .left,
+.panel-2 > .right {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+}
+
+.panel-3 {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 500px;
+}
+
+.panel-3 > div {
+    display: flex;
+}
+
+.text {
+    flex: 1 1 100%;
+    justify-content: center;
+    background-color: white;
+}
+
+.product-opts {
+    justify-content: center;
+    background-color: white;
+}
