@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
+
 html,
-body,
-.container {
+body {
     width: 100vw;
     height: 100vh;
     margin: 0;
+
 }
 
 .container {
-    background-image: linear-gradient(black, rgb(44, 0, 85));
+    background-image: linear-gradient(black 10%, rgb(18, 0, 85), rgb(102, 98, 211));
 }
 
 .header,
@@ -21,16 +23,16 @@ body,
 
 .header {
     justify-content: space-between;
-    background-color: blue;
 }
 
 .header > div {
     display: flex;
-    background-color: white;
 }
 
 .header > .left {
     margin-left: 10px;
+    color: white;
+    fon
 }
 
 .header > .right {
@@ -43,13 +45,12 @@ ul {
     list-style-type: none;
     padding: 0;
     gap: 10px;
-
+    color: white;
 }
 
 .panel-1,
 .panel-3 {
     justify-content: center;
-    background-color: blueviolet;
     align-items: center;
 }
 
@@ -59,20 +60,59 @@ ul {
 
 .main {
     background-color: white;
+    flex-wrap: wrap;
+    width: 700px;
+}
+
+.main > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title, 
+.product-img {
+    flex: 1 1 100%;
+}
+
+.product-img > p {
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 100px;
+    color: black;
+    font-stretch: condensed;
 }
 
 .panel-2 {
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 600px;
-    background-color: aquamarine;
 }
 
-.panel-2 > .left,
-.panel-2 > .right {
+.panel-2 > div {
+    display: flex;
     height: 400px;
     width: 400px;
-    background-color: white;
+    background-color: blue;
+}
+
+.panel-2 > .left {
+    margin-right: 40px;
+}
+
+.panel-2 > .right {
+    align-items: center;
+    margin-left: 40px;
+}
+
+
+#p2 > h3,
+#p2 > p {
+    color: white;
+}
+
+#p2 > h3 {
+    margin-bottom: 30px;
+    font-size: xx-large;
 }
 
 .panel-3 {
@@ -86,13 +126,40 @@ ul {
     display: flex;
 }
 
-.text {
+.panel-3 > .text {
     flex: 1 1 100%;
     justify-content: center;
     background-color: white;
 }
 
+.text > h3 {
+    font-size: xx-large;
+}
+
 .product-opts {
     justify-content: center;
-    background-color: white;
+    gap: 40px;
+}
+
+.opt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 150px;
+    background-color: blueviolet;
+}
+
+.img-option {
+    display: flex;
+    flex: 1 1 100%;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.description {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
 }
